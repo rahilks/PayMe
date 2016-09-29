@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="rahil.payme.InvoiceActivity">
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="0">
+
+        <TableRow>
+
+            <ImageView
+                android:src="@drawable/ksoft"
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:layout_height="100dp"
+                android:layout_width="100dp"
+                android:text="@string/invoice_number" />
+
+            <TextView
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:layout_height="100dp"
+                android:text="@string/invoice_number" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:background="@android:color/holo_blue_light"
+            android:showDividers="middle">
+
+            <TextView
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:text="@string/code" />
+
+            <TextView
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:text="@string/description" />
+
+            <TextView
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:text="@string/QTY" />
+
+            <TextView
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:text="@string/Price" />
+
+            <TextView
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:text="@string/LineTotal" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:text="SKU100" />
+
+            <TextView
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:text="Labor" />
+
+            <TextView
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:text="4.0" />
+
+            <TextView
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:text="$25.00" />
+
+            <TextView
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:text="100" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0">
+
+        <TableRow>
+
+            <TextView
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:text="Shipping $10.00" />
+
+            <TextView
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:text="Tax $7.80" />
+
+            <TextView
+                android:background="@drawable/cellborder"
+                android:padding="3dip"
+                android:text="Total Due $117.80" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/btnPay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/roundcorner"
+            android:src="@drawable/paypal_60px"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.4"
+            android:background="@drawable/mybutton"
+            android:text="@string/logout"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+</LinearLayout>
